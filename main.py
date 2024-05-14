@@ -133,10 +133,11 @@ async def chk(_, cb : CallbackQuery):
                 ]
         )
             add_user(cb.from_user.id)
-            await cb.message.edit("**⚡️ Hello {}!\n\nI m Auto Approve Bot.**\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n⚡️Powerd By @EmoBotDevolopers**".format(cb.from_user.mention, "https://t.me/EmoBotDevolopers"), reply_markup=keyboard, disable_web_page_preview=True)
+            await cb.message.edit("""**𝖧𝖾𝗒 𝖡𝗋𝗎𝗁𝗁! {}\n\n𝖨'𝗆 𝖺𝗇 𝖺𝗎𝗍𝗈 𝖺𝗉𝗉𝗋𝗈𝗏𝖾 𝖠𝖽𝗆𝗂𝗇 𝖩𝗈𝗂𝗇 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝗌 𝖡𝗈𝗍.
+\n𝖨 𝖼𝖺𝗇 𝖺𝗉𝗉𝗋𝗈𝗏𝖾 𝗎𝗌𝖾𝗋𝗌 𝗂𝗇 𝖦𝗋𝗈𝗎𝗉𝗌/𝖢𝗁𝖺𝗇𝗇𝖾𝗅𝗌. \n𝖩𝗎𝗌𝗍 𝖠𝖽𝖽 𝗆𝖾 𝗍𝗈 𝗒𝗈𝗎𝗋 𝖼𝗁𝖺𝗍 𝖺𝗇𝖽 𝗉𝗋𝗈𝗆𝗈𝗍𝖾 𝗆𝖾 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 𝗐𝗂𝗍𝗁 𝖺𝖽𝖽 𝗆𝖾𝗆𝖻𝖾𝗋𝗌 𝗉𝖾𝗋𝗆𝗂𝗌𝗌𝗂𝗈𝗇.\n\n𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝖽 & 𝖬𝖺𝗂𝗇𝗍𝖺𝗂𝗇𝗀 𝖡𝗒: <a href=https://telegram.dog/Kristy_TG>𝖪𝗋𝗂𝗌𝗍𝗒 கிறிஸ்டி 🇮🇳</a></b> """.format(cb.from_user.mention, "https://t.me/EmoBotDevolopers"), reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
-        await cb.answer("🙅‍♂️ You are not joined to channel join and try again. 🙅‍♂️")
+        await cb.answer("𝖧𝖺𝗁𝖺𝖺 𝖸𝗈𝗎 𝖺𝗋𝖾 𝖳𝗈𝗈 𝖲𝗆𝖺𝗋𝗍 𝖩𝗈𝗂𝗇 𝖬𝖺𝗁 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖺𝗇𝖽 𝖱𝖾𝗌𝗍𝖺𝗋𝗍 𝖡𝗈𝗍 𝖠𝖦𝖺𝗂𝗇🙅‍♂️")
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ info ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
