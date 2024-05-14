@@ -30,17 +30,7 @@ ABOUT = """
 
 
 gif = [
-    'https://telegra.ph/file/c4ea3761bb73bab726334.jpg',
-    'https://telegra.ph/file/c4ea3761bb73bab726334.jpg',
-    'https://telegra.ph/file/c4ea3761bb73bab726334.jpg',
-    'https://telegra.ph/file/c4ea3761bb73bab726334.jpg',
-    'https://telegra.ph/file/c4ea3761bb73bab726334.jpg',
-    'https://telegra.ph/file/d340fbf28f412487c5750.jpg',
-    'https://telegra.ph/file/d340fbf28f412487c5750.jpg',
-    'https://telegra.ph/file/d5becc3a7c18f619bcd22.png',
-    'https://telegra.ph/file/d5becc3a7c18f619bcd22.png',
-    'https://telegra.ph/file/d5becc3a7c18f619bcd22.png',
-    'https://telegra.ph/file/d5becc3a7c18f619bcd22.png'
+    'https://te.legra.ph/file/12fdf89910d7e87cc743a.mp4'
 ]
 
 
