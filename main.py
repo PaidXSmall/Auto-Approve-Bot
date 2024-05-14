@@ -76,8 +76,8 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/BotsXKristy"),
-                        InlineKeyboardButton("💬 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="https://t.me/Kristy_TG")
+                        InlineKeyboardButton("🗯 𝖩𝗈𝗂𝗇 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/BotsXKristy"),
+                        InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 🎈", url="https://t.me/MadrasRockersTG")
                     ],
              
 
@@ -94,12 +94,12 @@ async def op(_, m :Message):
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/{BOT_USERNAME}?start=start")
+                        InlineKeyboardButton("💁‍♂️ 𝖲𝗍𝖺𝗋𝗍 𝖬𝖾 𝖯𝗋𝗂𝗏𝖺𝗍𝖾 💁‍♂️", url="https://t.me/{BOT_USERNAME}?start=start")
                     ]
                 ]
             )
             add_group(m.chat.id)
-            await m.reply_text("*⚡️ Hello {}!\n Write me private for more details**".format(m.from_user.first_name), reply_markup=keyboar)
+            await m.reply_text("**𝖧𝖾𝗒 𝖡𝗋𝗎𝗁 {} 𝖲𝗍𝖺𝗋𝗍 𝖬𝖾 𝖨𝗇 𝖯𝗋𝗂𝗏𝖺𝗍𝖾 𝖥𝗂𝗋𝗌𝗍**".format(m.from_user.first_name), reply_markup=keyboar)
         print(m.from_user.first_name +" Is started Your Bot!")
 
     except UserNotParticipant:
@@ -110,7 +110,7 @@ async def op(_, m :Message):
                 ]
             ]
         )
-        await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join @{} to use me.If you joined click check again button to confirm.** \n\n".format(cfg.FSUB), reply_markup=key)
+        await m.reply_text("**⚠ 𝖣𝗎𝖾 𝖳𝗈 𝖮𝗏𝖾𝗋𝗅𝗈𝖺𝖽 𝖸𝗈𝗎 𝖢𝖺𝗇'𝗍 𝖴𝗌𝖾 𝖬𝖾𝗁 𝖯𝗅𝖾𝖺𝗌𝖾 𝖩𝗈𝗂𝗇 𝖬𝖺𝗁 𝖴𝗉𝖽𝖺𝗍𝖾𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 @{} & 𝖢𝗈𝗆𝖾 𝖠𝗀𝖺𝗂𝗇** \n".format(cfg.FSUB), reply_markup=key)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -122,18 +122,16 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/EmoBotDevolopers"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/EmoBotSupport")
+                        InlineKeyboardButton("🗯 𝖩𝗈𝗂𝗇 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/BotsXKristy"),
+                        InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 🎈", url="https://t.me/MadrasRockersTG")
                     ],
+             
+
                     [
-                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/RishBropromax/Auto-Approve-Bot"),
-                        InlineKeyboardButton("💻 Devoloper 💻", url="https://t.me/AboutRishmika")
-                    ],
-                    [
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/{BOT_USERNAME}?startgroup")
+                        InlineKeyboardButton("🧩 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖢𝗁𝖺𝗍 🧩", url="https://t.me/KaipullaNetworks_Bot?startgroup")
                     ]
                 ]
-            )
+        )
             add_user(cb.from_user.id)
             await cb.message.edit("**⚡️ Hello {}!\n\nI m Auto Approve Bot.**\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n⚡️Powerd By @EmoBotDevolopers**".format(cb.from_user.mention, "https://t.me/EmoBotDevolopers"), reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
@@ -153,7 +151,7 @@ async def dbtool(_, m : Message):
 🙋‍♂️ Users : `{xx}`
 👥 Groups : `{x}`
 🚧 Total users & groups : `{tot}`
-💠 Programmer :- @AboutRishmika
+💠 Programmer :- @KristyX_TG
 
 """)
 
@@ -221,8 +219,9 @@ async def fcast(_, m : Message):
 
     await lel.edit(f"✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
 
-print("Starting..")
-print("Checking Code Erorrs..!")
-print("Bot Running..")
-print("Bot Started")
+print("𝖲𝗍𝖺𝗋𝗍𝗂𝗇𝗁.")
+print("𝖳𝗁𝖺𝗇𝗄𝗌 𝖳𝗈 @𝖪𝗋𝗂𝗌𝗍𝗒𝖷_𝖳𝖦 v(￣︶￣)!")
+print("𝖩𝗈𝗂𝗇 𝖬𝖺𝗁 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 - @𝖡𝗈𝗍𝗌𝖷𝖪𝗋𝗂𝗌𝗍𝗒")
+print("𝖡𝗈𝗍 𝖲𝗍𝖺𝗋𝗍𝖾𝖽")
+
 app.run()
