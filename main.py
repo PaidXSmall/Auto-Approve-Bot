@@ -14,19 +14,15 @@ app = Client(
     api_hash=cfg.API_HASH,
     bot_token=cfg.BOT_TOKEN
 )
-
-ABOUT = """ 
-☃️**About This Bot**☃️
-
-💠Commands : [Click Here](https://telegra.ph/Auto-Join-Reqvest-Accpet-Bot-Commads-12-24)
-🍁Bot created by @EmoBotDevolopers
-📦Source Code : [Click Here](https://github.com/RishBropromax/Auto-Approve-Bot)
-☘️Framework : [Pyrogram](docs.pyrogram.org)
-🔰Language : [Python](www.python.org)
-🧑‍💻Developer : @AboutRishmika
-🆘Support : [Emo Bot Support](https://t.me/EmoBotSupport)
-
-"""
+ 
+ABOUT = """<b>
+• 𝖬𝖺𝗁 𝖭𝖺𝗆𝖾: <a href='https://t.me/KaipullaNetworks_Bot'>𝖠𝗎𝗍𝗈 𝖠𝗉𝗉𝗋𝗈𝗏𝖾 𝖡𝗈𝗍</a>
+• 𝖢𝗋𝖾𝖺𝗍𝗈𝗋: <a href='https://t.me/Abt_Kristy'>𝖪𝗋𝗂𝗌𝗍𝗒 கிறிஸ்டி | 🇮🇳 |</a>
+• 𝖫𝗂𝖻𝗋𝖺𝗋𝗒: <a href='https://docs.pyrogram.org/'>𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖵2.0.106</a>
+• 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾: <a href='https://www.python.org/download/releases/3.0/'>𝖯𝗒𝗍𝗁𝗈𝗇</a>
+• 𝖣𝖡: <a href='https://www.mongodb.com/'>𝖬𝗈𝗇𝗀𝗈𝖣𝖡</a>
+• 𝖡𝗈𝗍'𝗌 𝖲𝖾𝗋𝗏𝖾𝗋: <a href='https://heroku.com/'>𝖪𝗋𝗂𝗌𝗍𝗒'𝗌 𝖲𝖾𝗋𝗏𝖾𝗋</a>
+• 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌: v2.7.2 [ 𝖪𝖷 ]</b>"""
 
 
 gif = [
@@ -47,19 +43,17 @@ async def approve(_, m : Message):
         keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/EmoBotDevolopers"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/EmoBotSupport")
+                        InlineKeyboardButton("🗯 𝖩𝗈𝗂𝗇 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/BotsXKristy"),
+                        InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 🎈", url="https://t.me/MadrasRockersTG")
                     ],
+             
+
                     [
-                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/RishBropromax/Auto-Approve-Bot"),
-                        InlineKeyboardButton("💻 Devoloper 💻", url="https://t.me/AboutRishmika")
-                    ],
-                    [
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/emApprove_Bot?startgroup")
+                        InlineKeyboardButton("🧩 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖢𝗁𝖺𝗍 🧩", url="https://t.me/KaipullaNetworks_Bot?startgroup")
                     ]
                 ]
         )
-        await app.send_video(kk.id,img, "✌**Hello {}!\n\n I m Auto Approve Bot.**\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n⚡️Powerd By @EmoBotDevolopers ".format(m.from_user.mention), reply_markup=keyboard)
+        await app.send_video(kk.id,img, "** {} 𝖸𝗈𝗎𝗋 𝖩𝗈𝗂𝗇 𝖱𝖾𝗊 𝖶𝖺𝗌 𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖠𝗉𝗉𝗋𝗈𝗏𝖾𝖽 𝖡𝗒 𝖬𝖾 💌**".format(m.from_user.mention), reply_markup=keyboard)
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -70,7 +64,7 @@ async def approve(_, m : Message):
 
 @app.on_message(filters.command("about"))
 async def help(bot, message):
-  await message.reply_photo("https://telegra.ph/file/c4ea3761bb73bab726334.jpg",caption=ABOUT,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> ємσ вσт ∂єνσℓσρєʀѕ", url="t.me/EmoBotDevolopers")]]))
+  await message.reply_photo("https://telegra.ph/file/c4ea3761bb73bab726334.jpg",caption=ABOUT,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="t.me/BotsXKristy")]]))
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Start ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -82,20 +76,19 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/EmoBotDevolopers"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/EmoBotSupport")
+                        InlineKeyboardButton("🗯 𝖡𝗈𝗍𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/BotsXKristy"),
+                        InlineKeyboardButton("💬 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="https://t.me/Kristy_TG")
                     ],
+             
+
                     [
-                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/RishBropromax/Auto-Approve-Bot"),
-                        InlineKeyboardButton("💻 Devoloper 💻", url="https://t.me/AboutRishmika")
-                    ],
-                    [
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/emApprove_Bot?startgroup")
+                        InlineKeyboardButton("🧩 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖢𝗁𝖺𝗍 🧩", url="https://t.me/KaipullaNetworks_Bot?startgroup")
                     ]
                 ]
-            )
+        )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/d5becc3a7c18f619bcd22.png", caption="**🕊️ Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n 🔰 Powerd By [Emo Bot Devolopers](t.me/EmoBotSupport)**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://te.legra.ph/file/80caa5d62b5dea231ac7d.jpg", caption="""**𝖧𝖾𝗒 𝖡𝗋𝗎𝗁𝗁! {}\n\n𝖨'𝗆 𝖺𝗇 𝖺𝗎𝗍𝗈 𝖺𝗉𝗉𝗋𝗈𝗏𝖾 𝖠𝖽𝗆𝗂𝗇 𝖩𝗈𝗂𝗇 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝗌 𝖡𝗈𝗍.
+\n𝖨 𝖼𝖺𝗇 𝖺𝗉𝗉𝗋𝗈𝗏𝖾 𝗎𝗌𝖾𝗋𝗌 𝗂𝗇 𝖦𝗋𝗈𝗎𝗉𝗌/𝖢𝗁𝖺𝗇𝗇𝖾𝗅𝗌. \n𝖩𝗎𝗌𝗍 𝖠𝖽𝖽 𝗆𝖾 𝗍𝗈 𝗒𝗈𝗎𝗋 𝖼𝗁𝖺𝗍 𝖺𝗇𝖽 𝗉𝗋𝗈𝗆𝗈𝗍𝖾 𝗆𝖾 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 𝗐𝗂𝗍𝗁 𝖺𝖽𝖽 𝗆𝖾𝗆𝖻𝖾𝗋𝗌 𝗉𝖾𝗋𝗆𝗂𝗌𝗌𝗂𝗈𝗇.\n\n𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝖽 & 𝖬𝖺𝗂𝗇𝗍𝖺𝗂𝗇𝗀 𝖡𝗒: <a href=https://telegram.dog/Kristy_TG>𝖪𝗋𝗂𝗌𝗍𝗒 கிறிஸ்டி 🇮🇳</a></b> """.format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
