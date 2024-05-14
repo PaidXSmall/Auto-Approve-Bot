@@ -54,7 +54,22 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "✌**Hello {}!\n\n I m Auto Approve Bot.**\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n⚡️Powerd By @EmoBotDevolopers ".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "✌**Hello {}!\n\n I m Auto Approve Bot.**\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n⚡️Powerd By @EmoBotDevolopers ".format(m.from_user.mention, m.chat.title, reply_markup=keyboard))
+        keyboard = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("🗯 Channel", url="https://t.me/EmoBotDevolopers"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/EmoBotSupport")
+                    ],
+                    [
+                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/RishBropromax/Auto-Approve-Bot"),
+                        InlineKeyboardButton("💻 Devoloper 💻", url="https://t.me/AboutRishmika")
+                    ],
+                    [
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/emApprove_Bot?startgroup")
+                    ]
+                ]
+        )
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
