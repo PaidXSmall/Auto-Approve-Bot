@@ -59,7 +59,7 @@ async def approve(_, m : Message):
                     ]
                 ]
         )
-        await app.send_video(kk.id,img, "✌**Hello {}!\n\n I m Auto Approve Bot.**\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n⚡️Powerd By @EmoBotDevolopers ".format(m.from_user.mention, reply_markup=keyboard))
+        await app.send_video(kk.id,img, "✌**Hello {}!\n\n I m Auto Approve Bot.**\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n⚡️Powerd By @EmoBotDevolopers ".format(m.from_user.mention), reply_markup=keyboard))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
