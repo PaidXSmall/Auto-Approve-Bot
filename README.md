@@ -33,7 +33,7 @@
 
 </details>
 
-## 🏷 Environment Variables
+## 🏷 𝖤𝗇𝗏𝗂𝗋𝗈𝗇𝗆𝖾𝗇𝗍 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌
   - `API_ID` - Your Telegram API ID.Get it [Here](my.telegram.org)
   - `API_HASH` - Your Telegram API HASH.Get it [Here](my.telegram.org)
   - `MONGO_URI` - Add MongoDB Database URI.
@@ -43,5 +43,5 @@
   - `SUDO` - bot owners Id/ ids ( for broadcast and stats cmds). for multiple use space.
   
   
-### 𝖬𝖾𝗌𝗌𝖺𝗀𝖾
+### 𝖢𝗋𝖾𝖽𝗂𝗍𝗌
 ➣ [𝖪𝗋𝗂𝗌𝗍𝗒𝖷𝖣](https://github.com/ItsKristyXD) 𝖥𝗈𝗋 𝖠𝖽𝖽𝗂𝗇𝗀 𝖲𝗈𝗆𝖾 𝖡𝗎𝗍𝗍𝗈𝗇 𝖮𝗇 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖬𝖾𝗌𝗌𝖺𝗀𝖾
